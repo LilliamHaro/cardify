@@ -1,54 +1,67 @@
 # Cardify
-
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
-
+* **Nuestra librería usando JavaScript_
 ***
+
+
+## A. Objetivo:
 
 Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
-## Flujo de trabajo
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+## B.  Flujo de trabajo:
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+### Semana 1
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/cardify.git
-   ```
+1. Se realizó un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74) de este repositorio.
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a la rama que tus
-   instructorxs este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+   
+2. La segunda integrante realiza un fork del repositorio de la primera integrante para luego posicionarse en la rama      creada, clonar el repositorio de la companera y comenzar a trabajar. 
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` :smiley:.
 
-***
+3. Se escribe una primera version de README, este posee una descripcion general del proyecto. 
 
-## Instalación
 
-### Global (navegador)
+4. Se crean issue y milestone.
 
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
-```
 
-## Uso
+### Semana 2
 
-```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
-```
+1. Agregar los test.
 
-## Ejemplos
+2. Creando la funcionalidad desde app.js
 
-...
+### Semana 3
+
+1. Hacer code review con tus compañeras e instructores. 
+
+2. Preparar tu demo/presentación.
+
+3. Publicar el ejemplo principal (index.html) en GitHub pages. 
+
+
+## C. Recursos utilizados
+
+* HTML5
+* CSS
+* BOOTSTRAP v4.0.0
+* JQUERY v3.2.1.
+* Eslint v4.15.0
+* 
+
+
+## D. Integrantes
+
+* 
+* Jymma Mogollon
+
+
+## F. Producto
+
+![Cardify](assets/images/.png)
+![Cardify](assets/images/.png)
+![Cardify](assets/images/.png)
+![Cardify](assets/images/.png)
+
