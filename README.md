@@ -1,5 +1,5 @@
 # Cardify
-* **Nuestra librería usando JavaScript_
+* Nuestra librería usando JavaScript_
 ***
 
 
@@ -54,7 +54,7 @@ con el texto del atributo `alt` de la imagen.
 
 ## D. Integrantes
 
-* 
+* Lilliam Haro
 * Jymma Mogollon
 
 
