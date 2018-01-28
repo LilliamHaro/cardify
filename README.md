@@ -65,3 +65,8 @@ con el texto del atributo `alt` de la imagen.
 ![Cardify](assets/images/.png)
 ![Cardify](assets/images/.png)
 
+
+## G. Licencia
+
+*Copyright (C) 2018 ~ Cardify*
+
