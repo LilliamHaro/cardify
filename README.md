@@ -1,7 +1,6 @@
 # Cardify
-* Nuestra primera librería usando JavaScript_
+* Nuestra primera librería usando JavaScript
 ***
-
 
 ## A. Objetivo:
 
@@ -10,6 +9,44 @@ imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
 
+* Ejemplo de funcionamiento
+
+Tenemos dos contenedores con imagenes varias, las etiquetas <img> al ser inline suelen verse desordenadas junto a otros elementos cercanos por eso queremos que se vean mas espaciados y con una pequeña descripcion tomada de su altributo alt.
+
+```html
+  <div id="container">
+    <img src="assets/images/1.jpg" alt="primera imagen">
+    <img src="assets/images/2.jpg" alt="segunda imagen">
+    <div >
+      <img src="assets/images/3.jpg" alt="tercera imagen">
+    </div>
+  </div>
+  <div id="other-container">
+    <img src="assets/images/1.jpg" alt="primera imagen">
+    <img src="assets/images/2.jpg" alt="segunda imagen">  
+  </div>
+```
+
+Para ello usamos el plugin cardify y seleccionamos el contenedor en el que queremos que actue desde la hoja js.
+
+```javascript
+    $('#container').cardify();
+```
+Así se verá el resultado:
+
+```html
+  <div id="container">
+    <figure><img src="assets/images/1.jpg" alt="primera imagen"><figcaption>primera imagen</figcaption></figure>
+    <figure><img src="assets/images/2.jpg" alt="segunda imagen"><figcaption>segunda imagen</figcaption></figure>
+    <div>
+     <figure><img src="assets/images/3.jpg" alt="tercera imagen"><figcaption>tercera imagen</figcaption></figure>
+    </div>
+  </div>
+  <div id="other-container">
+    <img src="assets/images/1.jpg" alt="primera imagen">
+    <img src="assets/images/2.jpg" alt="segunda imagen">  
+  </div>
+```
 
 ## B.  Flujo de trabajo:
 
