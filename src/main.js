@@ -21,13 +21,14 @@
   $.fn.cardify = function () {
     let images = $(this).find('img');
     $('img').css({
-      'width': '80p%',
-      'heigth': '40%'
+      'width': '80%',
+      'heigth': '60%'
     });
     images.each(function () {
       // encerrando la imagen en la etiqueta figure
       $(this).wrap('<figure></figure>').css({
         'margin-top': '15%',
+        'margin-bottom': '5%',
         'margin-left': '10%',
         'box-shadow': '10px 10px white, -10px -10px rgb(132, 175, 155), 0px 0px 40px 10px pink',
         'border-color': '1px solid blue'
@@ -39,7 +40,6 @@
         'color': 'darkblue',
         'font-size': '2rem',
         'margin-left': '10%',
-        'margin-top': '5%'
       });
       // anexando la etiqueta figcaption y su contenido a la etiqueta figure con la imagen
       $(this).parent().append($('<figcaption></figcaption>'));
