@@ -52,6 +52,7 @@
         'align-items': 'center',
         'font-weight': 'bold',
         'font-size': '2rem',
+        'padding': '15px',
         'color': '#fff',
         'z-index': '-1',
         'justify-content': 'center'

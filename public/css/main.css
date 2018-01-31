@@ -5,9 +5,14 @@
 }
 
 img {
-  width: 300px;
+  width: 350px;
 }
-
+.float-left {
+  float: left;
+}
+.overflow {
+  overflow: auto;
+}
 .width-50 {
   width: 50%;
 }
@@ -15,11 +20,33 @@ img {
 .container {
  float: left;
 }
-
-.pd-30 {
-  padding: 30px;
+.pd-50 {
+  padding: 50px;
+}
+.pd-20 {
+  padding: 10px;
 }
 
 figcaption {
   color: gray;
+}
+
+.title {
+  font-weight: bold;
+  color: #EEE5E9;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  background-color: #383D3B;
+}
+.subtitle {
+  font-weight: bold;
+  color: #EEE5E9;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.pd {
+  padding: 12px 8.3%;
+}
+.bg {
+  background-color: #383D3B;
 }
