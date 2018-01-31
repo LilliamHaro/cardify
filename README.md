@@ -26,7 +26,7 @@ Simplemente seleccionamos el contenedor en el que queremos que actue desde la ho
 ```javascript
     $('#container').cardify();
 ```
-Así se verá el cambio :
+Así se verá el cambio al momento del hover :
 
 ![Cardify](public/assets/images/this.png)
 
@@ -34,7 +34,7 @@ Así se verá el cambio :
 ## Instalación
 
   * Cardify requiere el uso de jquery para su correcto funcionamiento
-  * Se debe llamar a la hoja index.js desde la hoja html mediante un script
+  * Se debe llamar a la hoja index.js (previamente descargada) desde la hoja html mediante una etiqueta script
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
