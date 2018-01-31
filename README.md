@@ -13,10 +13,6 @@ Tenemos dos contenedores con imagenes como se muestra en el siguiente codigo htm
 ```html
   <div id="container">
     <img src="assets/images/1.jpg" alt="primera imagen">
-    <img src="assets/images/2.jpg" alt="segunda imagen">
-    <div >
-      <img src="assets/images/3.jpg" alt="tercera imagen">
-    </div>
   </div>
   <div id="other-container">
     <img src="assets/images/1.jpg" alt="primera imagen">
@@ -24,25 +20,25 @@ Tenemos dos contenedores con imagenes como se muestra en el siguiente codigo htm
   </div>
 ```
 
-Sí queremos darle un efecto hover distinto y de forma rápida a las imagenes del contenedor con id _container_ cardify será de mucha ayuda!
+Sí queremos darle un efecto hover distinto y de forma rápida a las imagenes del contenedor con id _container_, cardify será de mucha ayuda!
 Simplemente seleccionamos el contenedor en el que queremos que actue desde la hoja javascript de la siguiente manera:
 
 ```javascript
     $('#container').cardify();
 ```
-Y así se verá el resultado en hover:
+Así se verá el cambio :
 
-![Cardify](assets/images/this.png)
+![Cardify](public/assets/images/this.png)
 
 
 ## Instalación
 
   * Cardify requiere el uso de jquery para su correcto funcionamiento
-  * Se debe llamar a la hoja path-to-cardify.js desde la hoja html mediante un script
+  * Se debe llamar a la hoja index.js desde la hoja html mediante un script
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="path-to-cardify.js"></script>
+<script src="index.js"></script>
 ```
 
 
@@ -60,7 +56,7 @@ Y así se verá el resultado en hover:
 * Lilliam Haro
 * Jymma Mogollon
 
-## C. Archivos utilizados
+## Archivos utilizados
 
 * README.md con descripción de la librería, instrucciones de instalación, uso y documentación del API.
 * index.js: Librería debe exportar una función u objeto al entorno global (window) y hacer uso de features de ES6.
@@ -69,6 +65,6 @@ Y así se verá el resultado en hover:
 * .gitignore para ignorar node_modules u otras carpetas que no deban incluirse en control de versiones.
 * package.json con nombre, versión, descripción, autores, licencia, dependencias, scripts (pretest, test, ...)
 
-## G. Licencia
+## Licencia
 
 *Copyright (C) 2018 ~ Cardify*
