@@ -67,22 +67,23 @@ figcaption {
 }
 
 .sumary-table{
-  border:1px solid #a2a9b1;
+  border:1.5px solid black;
   background: color #fbf9fa;
-  padding:2px;
+  padding:2rem;
   font-size:14px;
 
 }
 
 .sumary-table thead th{
   background-color:#a2a9b1;
-  padding:4%;
+  padding:6%;
   font-size:16px;
   text-align: center;
 }
 
 .sumary-table tbody tr:first-child{
   text-align:center;
+
 }
 
 .sumary-table tbody th{
