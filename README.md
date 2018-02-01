@@ -28,7 +28,7 @@ Simplemente seleccionamos el contenedor en el que queremos que actue desde la ho
 ```
 Así se verá el cambio al momento del hover :
 
-![Cardify](public/assets/images/this.png)
+![Cardify](public/assets/images/adagirl.png)
 
 
 ## Instalación
@@ -66,6 +66,10 @@ Así se verá el cambio al momento del hover :
 * .eslintrc con configuración para linter.
 * .gitignore para ignorar node_modules u otras carpetas que no deban incluirse en control de versiones.
 * package.json con nombre, versión, descripción, autores, licencia, dependencias, scripts (pretest, test, ...)
+
+## Realizando nuestras primeras pruebas
+
+![Cardify](public/assets/images/test2.png)
 
 ## Licencia
 
