@@ -1,4 +1,4 @@
 
 $(document).ready(() => {
-  $('#container').cardify();
+  $('.overflow').cardify();
 });
