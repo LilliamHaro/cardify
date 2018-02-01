@@ -14,31 +14,31 @@
 //   });
 // };
 
-
-// function-plugin con jquery
-(function($) {
-  // fn$.fn => jQuery.prototype
+(function(jQuery) {
+  // $.fn => jQuery.prototype
   $.fn.cardify = function() {
-    let images = $(this).find('img');
+    let images = this.find('img');
     images.each(function() {
-      // encerrando la imagen en la etiqueta 2 figure tag
-      // primer figure(inline) tag -> definir los limites del figcaption que rodearan toda la imagen
-      // segundo figure(block) -> darle forma de bloque
-      let newFigure = $(this).wrap('<figure><figure>');
-      $(this).css({
-        // 'width': '100%'
+      images.css({
+        'box-shadow': '7px 7px 10px #000',
       });
-      $(this).parent().css({
+    });
+    // agregando eventos para que aparezca el texto alt
+    images.on('mouseover', (event) => {
+      $(event.target).css({
+        'opacity': '0.1',
+      });
+      let newFigure = $(event.target).wrap('<figure>');
+      $(event.target).parent().css({
         'position': 'relative',
         'display': 'inline-block',
-        'box-shadow': '2px 2px 5px #999',
       });
-      let figcaption = $('<figcaption>');
-      let altText = $(this).attr('alt');
+      let figcaption = $('<figcaption class="fig">');
+      let altText = $(event.target).attr('alt');
       figcaption.text(altText);
       // anexando la etiqueta figcaption y su contenido a la etiqueta figure con la imagen
-      $(this).parent().append(figcaption);
-      // agregandole clases para que el texto aparezca encima de la imagen sin que se muestre
+      $(event.target).parent().append(figcaption);
+      // agregandole clases para que el texto aparezca encima de la imagen
       figcaption.css({
         'position': 'absolute',
         'top': '0',
@@ -55,17 +55,14 @@
         'padding': '15px',
         'color': '#fff',
         'z-index': '-1',
-        'justify-content': 'center'
+        'justify-content': 'center',
+        'box-shadow': '7px 7px 10px #000',
       });
     });
-    // agregando eventos para que aparezca el texto alt
-    images.on('mouseover', function() {
-      $(this).css({
-        'opacity': '0.1',
-      });
-    });
-    images.on('mouseout', function() {
-      $(this).css({
+    images.on('mouseout', (event) => {
+      $('.fig').remove();
+      $(event.target).unwrap();
+      $(event.target).css({
         'opacity': '1'
       });
     });
