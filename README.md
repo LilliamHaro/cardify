@@ -13,10 +13,10 @@ Tenemos dos contenedores con imagenes como se muestra en el siguiente codigo htm
 ```html
   <div class="overflow">
     <div id="container" class="col-md-offset-2 col-md-4">
-      <img src="../assets/images/infancia.png" alt="Ada Lovelace de niña">
+      <img src="../assets/images/lorem.png" alt="fabulosa descripción">
     </div>
   </div>
-   <img src="assets/images/adagirl.png" alt="Ada Lovelace">
+   <img src="assets/images/lorem2.png" alt="lorem">
 
 ```
 
