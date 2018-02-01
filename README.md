@@ -12,7 +12,7 @@ Tenemos dos contenedores con imagenes como se muestra en el siguiente codigo htm
 
 ```html
   <div id="container">
-    <img src="assets/images/1.jpg" alt="primera imagen">
+    <img src="assets/images/1.jpg" alt="fabulosa descripción">
   </div>
   <div id="other-container">
     <img src="assets/images/1.jpg" alt="primera imagen">
