@@ -11,12 +11,16 @@ con el texto del atributo `alt` de la imagen.
 Tenemos dos contenedores con imagenes como se muestra en el siguiente codigo html
 
 ```html
-  <div class="overflow">
-    <div id="container" class="col-md-offset-2 col-md-4">
-      <img src="../assets/images/lorem.png" alt="fabulosa descripción">
+  <div class='overflow'>
+    <div id='container' class='col-md-offset-2 col-md-4'>
+      <img src='assets/images/infancia.png' alt='Ada Lovelace de niña'>
     </div>
   </div>
-   <img src="assets/images/lorem2.png" alt="lorem">
+  <div class='overflow'>
+    <div id='container2' class='col-md-offset-2 col-md-4'>
+      <img src='assets/images/maqanalitica.png' alt='La máquina analítica de Babbage'>
+    </div>
+  </div>
 
 ```
 
