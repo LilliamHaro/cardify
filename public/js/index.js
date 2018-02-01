@@ -1,7 +1,5 @@
-'use strict';
-
 (function(jQuery) {
-  // fn$.fn => jQuery.prototype
+  // $.fn => jQuery.prototype
   $.fn.cardify = function() {
     var images = $(this).find('img');
     images.each(function() {
@@ -10,20 +8,20 @@
       });
     });
     // agregando eventos para que aparezca el texto alt
-    images.on('mouseover', function() {
-      $(this).css({
+    images.on('mouseover', function(event) {
+      $(event.target).css({
         'opacity': '0.1',
       });
-      var newFigure = $(this).wrap('<figure>');
-      $(this).parent().css({
+      var newFigure = $(event.target).wrap('<figure>');
+      $(event.target).parent().css({
         'position': 'relative',
         'display': 'inline-block',
       });
       var figcaption = $('<figcaption class="fig">');
-      var altText = $(this).attr('alt');
+      var altText = $(event.target).attr('alt');
       figcaption.text(altText);
       // anexando la etiqueta figcaption y su contenido a la etiqueta figure con la imagen
-      $(this).parent().append(figcaption);
+      $(event.target).parent().append(figcaption);
       // agregandole clases para que el texto aparezca encima de la imagen
       figcaption.css({
         'position': 'absolute',
@@ -31,7 +29,7 @@
         'left': '0',
         'right': '0',
         'bottom': '0',
-        'background': 'rgba(0,0,0,0.8)',
+        'background': 'rgba(0,0,0,0.9)',
         'margin': '0',
         'display': 'flex',
         'text-align': 'center',
@@ -45,10 +43,10 @@
         'box-shadow': '7px 7px 10px #000',
       });
     });
-    images.on('mouseout', function() {
+    images.on('mouseout', function(event) {
       $('.fig').remove();
-      $(this).unwrap();
-      $(this).css({
+      $(event.target).unwrap();
+      $(event.target).css({
         'opacity': '1'
       });
     });
