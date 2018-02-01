@@ -28,7 +28,7 @@ Sí queremos darle un efecto hover distinto y de forma rápida a las imagenes de
 Simplemente seleccionamos el contenedor en el que queremos que actue desde la hoja javascript de la siguiente manera:
 
 ```javascript
-    $('#container').cardify();
+    $('.overflow').cardify();
 ```
 Así se verá el cambio al momento del hover :
 
