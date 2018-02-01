@@ -5,6 +5,8 @@
     images.each(function() {
       images.css({
         'box-shadow': '7px 7px 10px #000',
+        'margin-bottom': '25px',
+        'margin-top': '25px'
       });
     });
     // agregando eventos para que aparezca el texto alt
@@ -41,6 +43,8 @@
         'z-index': '-1',
         'justify-content': 'center',
         'box-shadow': '7px 7px 10px #000',
+        'margin-bottom': '25px',
+        'margin-top': '25px'
       });
     });
     images.on('mouseout', function(event) {
