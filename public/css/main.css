@@ -8,7 +8,26 @@ body{
   font-family:Raleway,sans-serif;
   color: black;
 }
-
+.btn  {
+  border: none;
+  border-radius: 5px;
+  background-color: yellowgreen;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+.btn a {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.height-100 {
+  height: 100vh;
+}
 h1{
   margin-bottom:2%;
   margin-left:8%;
