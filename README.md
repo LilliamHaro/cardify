@@ -49,6 +49,8 @@ Así se verá el cambio al momento del hover :
 * BOOTSTRAP v4.0.0
 * JQUERY v3.2.1.
 * Eslintrc v4.15.0
+* Mocha
+* Chai
 
 
 ## Autores
