@@ -11,13 +11,13 @@ con el texto del atributo `alt` de la imagen.
 Tenemos dos contenedores con imagenes como se muestra en el siguiente codigo html
 
 ```html
-  <div id="container">
-    <img src="assets/images/1.jpg" alt="fabulosa descripción">
+  <div class="overflow">
+    <div id="container" class="col-md-offset-2 col-md-4">
+      <img src="../assets/images/infancia.png" alt="Ada Lovelace de niña">
+    </div>
   </div>
-  <div id="other-container">
-    <img src="assets/images/1.jpg" alt="primera imagen">
-    <img src="assets/images/2.jpg" alt="segunda imagen">  
-  </div>
+   <img src="assets/images/adagirl.png" alt="Ada Lovelace">
+
 ```
 
 Sí queremos darle un efecto hover distinto y de forma rápida a las imagenes del contenedor con id _container_, cardify será de mucha ayuda!
