@@ -1,12 +1,10 @@
-const $ = require('jquery');
-const cardify = {};
-
-
-(function (jQuery) {
+// const $ = require('jquery');
+// const cardify = {};
+(function(jQuery) {
   // $.fn => jQuery.prototype
-  $.fn.cardify = function () {
+  $.fn.cardify = function() {
     var images = $(this).find('img');
-    images.each(function () {
+    images.each(function() {
       images.css({
         'box-shadow': '7px 7px 10px #000',
         'margin-bottom': '25px',
@@ -14,7 +12,7 @@ const cardify = {};
       });
     });
     // agregando eventos para que aparezca el texto alt
-    images.on('mouseover', function (event) {
+    images.on('mouseover', function(event) {
       $(event.target).css({
         'opacity': '0.1',
       });
@@ -51,7 +49,7 @@ const cardify = {};
         'margin-top': '25px'
       });
     });
-    images.on('mouseout', function (event) {
+    images.on('mouseout', function(event) {
       $('.fig').remove();
       $(event.target).unwrap();
       $(event.target).css({
