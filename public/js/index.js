@@ -1,3 +1,5 @@
+'use strict';
+
 (function(jQuery) {
   // fn$.fn => jQuery.prototype
   $.fn.cardify = function() {

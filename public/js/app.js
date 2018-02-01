@@ -1,4 +1,4 @@
 
-window.addEventListener('load', function() {
+$(document).ready(() => {
   $('#container').cardify();
 });
