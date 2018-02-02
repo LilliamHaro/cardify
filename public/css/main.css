@@ -8,14 +8,13 @@ body{
   font-family:Raleway,sans-serif;
   color: black;
 }
+.float {
+  float: right;
+}
 .btn  {
-  border: none;
-  border-radius: 5px;
   background-color: yellowgreen;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 .btn a {
   text-decoration: none;
@@ -94,7 +93,6 @@ p{
 
 img {
   width: 350px;
-  margin-top: 2rem;
 
 }
 figcaption {
@@ -112,15 +110,52 @@ figcaption {
   height: 100%;
   margin-bottom: 15%;
 }
+.bg-yellowgreen {
+  background-color: yellowgreen;
+}
+.big {
+  font-size: 28px;
+  font-weight: bold;
+}
+.bg-gray {
+  background-color:#D0F5A9;
+}
+.pd-20 {
+  padding: 1px 30px 30px 30px;
+  border-radius:10px;
+  margin-bottom: 10px
+}
+.border {
+  border: 3px dotted black;
+}
+.mg-25 li {
+  list-style:decimal;
+  margin-bottom: 10px;
+}
+.mg-25 {
+  width: 80%;
+  margin: 25px auto;
+}
+.we {
+  color: #000;
+  font-weight: bold;
+}
 
+.bg-black {
+  background-color: black
+}
+.colo-yellowgreen {
+  color: yellowgreen;
+}
 .sumary-table{
   border:1px solid #a2a9b1;
   background: color #fbf9fa;
   padding:2px;
   font-size:14px;
-
 }
-
+.white {
+  color: #fff;
+}
 .sumary-table thead th{
   background-color:#a2a9b1;
   padding:4%;
